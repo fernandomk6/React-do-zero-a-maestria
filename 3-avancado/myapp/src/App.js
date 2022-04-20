@@ -4,6 +4,7 @@ import Island from './components/Island';
 import Desert from './components/Desert';
 import ManageData from './components/ManageData';
 import ListRender from './components/ListRender';
+import ConditionalRender from './components/ConditionalRender';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Desert />
       <ManageData />
       <ListRender />
+      <ConditionalRender />
     </div>
   );
 }
