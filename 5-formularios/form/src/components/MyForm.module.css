@@ -1,0 +1,33 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.formContainer form {
+  padding: 0 40px;
+  max-width: 500px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+
+.formContainer form label {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.formContainer form label input[type="text"] {
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+
+.formContainer form input[type="submit"] {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  align-self: center;
+  outline: none;
+}
