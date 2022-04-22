@@ -1,0 +1,16 @@
+h1 { 
+  padding: 20px 40px;
+  color: var(--light-blue-react);
+  background-color: var(--dark-blue-react); 
+  border: 1px solid var(--light-blue-react);
+}
+
+.strong-text {
+  color: pink;
+  font-size: 50px;
+}
+
+.light-text {
+  color: violet;
+  font-size: 10px;
+}

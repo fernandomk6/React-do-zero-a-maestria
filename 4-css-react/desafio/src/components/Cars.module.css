@@ -1,0 +1,26 @@
+.cars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cars ul {
+  background-color: bisque;
+  padding: 20px;
+  margin: 0 20px;
+  list-style: none;
+  border-left: 8px solid lightgreen;
+  cursor: pointer;
+  transition: .5s;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.cars ul:hover {
+  border-left: 8px solid darkgreen;
+}
+
+.cars li {
+  margin-bottom: 5px;
+}
