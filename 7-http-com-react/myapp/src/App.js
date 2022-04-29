@@ -11,7 +11,7 @@ function App() {
   const [price, setPrice] = useState("");
 
   // custom hook useFetch
-  const {data: items} = useFetch(url);
+  const {data: items, httpConfig, loading, error} = useFetch(url);
   
   // substituido pelo custom hook ./hooks/useFetch 
 
@@ -32,17 +32,19 @@ function App() {
       price,
     }
 
-    const res = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(product)
-    });
+    // const res = await fetch(url, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   },
+    //   body: JSON.stringify(product)
+    // });
 
-    const addedProduct = await res.json();
+    // const addedProduct = await res.json();
 
-    setProducts((previousProducts) => [...previousProducts, addedProduct]);
+    // setProducts((previousProducts) => [...previousProducts, addedProduct]);
+
+    httpConfig(product, "POST");
 
     setName("");
     setPrice("");
@@ -51,6 +53,8 @@ function App() {
   return (
     <div className="App">
       <h1>Lista de produtos</h1>
+      {loading && (<p>Carregando dados...</p>)}
+      {error && (<p>{error}</p>)}
       <ul>
         {items && items.map((p) => {
           return (
@@ -82,7 +86,12 @@ function App() {
               placeholder="Digite o valor do produto" 
             />
           </label>
-          <input type="submit"  value="Criar"/>
+          {loading && (
+            <input type="submit" disabled value="Aguarde"/>
+          )}
+          {!loading && (
+            <input type="submit"  value="Criar"/>
+          )}
         </form>
       </div>
     </div>

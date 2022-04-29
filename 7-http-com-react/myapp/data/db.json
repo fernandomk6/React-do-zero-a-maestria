@@ -54,6 +54,51 @@
       "name": "capacete preto",
       "price": "450",
       "id": 11
+    },
+    {
+      "name": "mouse",
+      "price": "15",
+      "id": 12
+    },
+    {
+      "name": "teste",
+      "price": "99",
+      "id": 13
+    },
+    {
+      "name": "teste",
+      "price": "88",
+      "id": 14
+    },
+    {
+      "name": "telefone",
+      "price": "99",
+      "id": 15
+    },
+    {
+      "name": "macarrão kg",
+      "price": "7",
+      "id": 16
+    },
+    {
+      "name": "teste",
+      "price": "11",
+      "id": 17
+    },
+    {
+      "name": "teste",
+      "price": "77",
+      "id": 18
+    },
+    {
+      "name": "teste",
+      "price": "77",
+      "id": 19
+    },
+    {
+      "name": "camarão",
+      "price": "88",
+      "id": 20
     }
   ]
 }
