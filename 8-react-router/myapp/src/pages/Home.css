@@ -1,0 +1,27 @@
+.products {
+  margin: 0 auto;
+  max-width: 70%;
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.products li {
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  width: 25%;
+  border-radius: 2em;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.products li:hover {
+  background-color: brown;
+}

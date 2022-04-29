@@ -1,0 +1,32 @@
+.navbar-container ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container a {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px;
+  transition: .4s;
+  border: 1px solid gray;
+  color: black;
+  border-radius: 2em;
+}
+
+.navbar-container a:hover {
+  background-color: brown;
+}
+
+.active{
+  background-color: brown;
+  color: white;
+}

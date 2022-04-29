@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "name": "capacete preto",
+      "price": "450",
+      "id": 1
+    },
+    {
+      "name": "mouse",
+      "price": "15",
+      "id": 2
+    },
+    {
+      "name": "camisa preta",
+      "price": "30",
+      "id": 3
+    },
+    {
+      "name": "camisa amarela",
+      "price": "30",
+      "id": 4
+    },
+    {
+      "name": "camisa vermelha",
+      "price": "30",
+      "id": 5
+    }
+  ]
+}
