@@ -50,6 +50,12 @@ function App() {
     setPrice("");
   };
 
+  const handleDelete = (p) => {
+
+    httpConfig(p, "DELETE");
+
+  };
+
   return (
     <div className="App">
       <h1>Lista de produtos</h1>
@@ -60,6 +66,7 @@ function App() {
           return (
             <li key={p.id}>
               <span>{p.name} R$ {p.price}</span>
+              <button onClick={() => handleDelete(p)}>Delete</button>
             </li>
           )
         })}

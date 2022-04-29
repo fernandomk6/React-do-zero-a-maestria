@@ -12,6 +12,8 @@ export const useFetch = (url) => {
 
   const [error, setError] = useState(null);
 
+  const [urlDelete, setUrlDelete] = useState(url);
+
   const httpConfig = (data, method) => {
     if(method === "POST") {
       setConfig({
@@ -22,6 +24,20 @@ export const useFetch = (url) => {
         body: JSON.stringify(data)
       });
 
+      setMethod(method);
+    }
+
+    if(method === "DELETE") {
+
+      setConfig({
+        method,
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      setUrlDelete((prevUrl) => prevUrl+"/"+data.id);
       setMethod(method);
     }
   };
@@ -62,6 +78,16 @@ export const useFetch = (url) => {
         const res = await fetch(...fetchOptions);
         const json = await res.json();
 
+        setCallFetch(json);
+
+      };
+
+      if(method === "DELETE") {
+        
+        const res = await fetch(urlDelete, config);
+        const json = await res.json();
+
+        setUrlDelete(url);
         setCallFetch(json);
 
       };
