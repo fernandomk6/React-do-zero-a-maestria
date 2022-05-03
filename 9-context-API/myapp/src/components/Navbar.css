@@ -1,0 +1,21 @@
+.navbar ul {
+  padding: 20px 40px;
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 10px;
+  background-color: aqua;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: inline-block;
+}
+
+.active {
+  background-color: gold;
+}
