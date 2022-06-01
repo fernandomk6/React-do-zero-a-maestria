@@ -1,4 +1,7 @@
 - useState
-  armazena e altera um valor, com a rerenderização do componente
+    armazena e altera um valor, com a rerenderização do componente
 - useReducer
-  armazena e altera um valor, porem, por meio de uma função customizada
+    armazena e altera um valor, porem, por meio de uma função customizada
+- useEffect
+    conseguimos controlar quantas vezes algo acontece
+    a sintaxe é composta por uma função a ser executada e um array de dependencias
