@@ -5,3 +5,11 @@
 - useEffect
   - conseguimos controlar quantas vezes algo acontece
   - a sintaxe é composta por uma função a ser executada e um array de dependencias
+- useContext
+  - useContext é usado para consumir um contexto da Context API
+  - precisa criar um context e também um provider
+  - envolver os componentes que receberão o contexto compartilhado
+- useRef
+  - utilizado como o useState para gerenciar um valor
+  - a diferença é que ele é um objeto e seu valor esta na propriedade current
+  - não re-rerenderiza o componente ao ser alterado
